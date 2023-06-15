@@ -1,0 +1,233 @@
+/* font-family: 'Raleway', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.fylo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.fylo-navbar{
+    padding: 3%;
+}
+
+.fylo-logo{
+    padding-left: 3%;
+}
+
+.fylo-navbar ul{
+    display: flex;    
+    gap: 5em;
+}
+
+.fylo-navbar>ul>li{
+    list-style-type: none;  
+}
+
+.fylo-navbar>ul>li>a{
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+
+
+
+/* section-1 */
+
+.fylo-section-1{
+    display: flex;
+    
+}
+
+.section1-left{
+    width: 50%;
+}
+
+
+.section1-right{
+    width: 50%;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 4.5rem 0 1rem 3rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.section1-left p{
+    font-size: 1.3rem;
+    padding: 0 1.5rem 0 3rem;
+    font-weight: 700;
+    color: hsl(238, 22%, 44%);
+}
+
+.section1-form{
+    display: flex;
+    padding-left: 3rem;
+    gap: 1rem;
+    height: 2.9rem;
+}
+
+
+.section1-form input{
+    width: 50%;
+}
+
+.section1-form button{
+    width: 30%;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.section1-right img{
+    width: 100%;
+}
+
+
+
+/* section-2 */
+
+.fylo-section-2{
+    display: flex;
+}
+
+.section2-left{
+    width: 50%;
+}
+
+.section2-right{
+    width: 50%;
+}
+
+h2{
+    font-size: 2.5rem;
+    padding: 4.5rem 0 1rem 3rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.section2-para{
+    font-size: 1.1rem;
+    padding: 0 8.8rem 0 3rem;
+    font-weight: 700;
+    color: hsl(238, 22%, 44%);
+}
+
+.section2-left a{
+    padding-left: 3rem;
+    color: hsl(170, 45%, 43%);
+    font-size: 1.2rem;
+    text-underline-offset: 10px;
+}
+
+/* section-2-testimonial */
+
+.fylo-testimonial{
+    background-color: #fff;
+    text-align: left;
+    width: 50%;
+    margin-top: 3rem;
+    box-shadow: 0 0 15px 2px hsl(0, 0%, 75%);
+}
+
+.fylo-testimonial>p{
+    color: hsl(243, 87%, 12%);
+    font-size: 1rem;
+    padding: 3% 5%;
+    font-weight: 400;
+}
+
+.testimonial-name{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.testimonial-name img{
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+    margin-left: 10%;
+    float: left;
+}
+
+.testimonial-name>p{
+    font-size: .9em;
+    padding: 5%;
+}
+
+
+.section2-right img{
+    width: 100%;
+}
+
+
+
+/* section-3 */
+
+.fylo-section-3{
+    display: flex;
+    align-items: center;
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+}
+
+.section3-left{
+    padding: 3rem;
+    width: 50%;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+.section3-left>p{
+    font-size: .9em;
+    padding-right: 10rem;
+}
+
+.section3-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 9rem;
+    width: 50%;
+}
+
+.section3-right>input{
+    width: 80%;
+    height: 40px;
+}
+
+.section3-right>button{
+    width: 35%;
+    height: 40px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+
+/* footer */
+
+footer{
+    padding: 5rem 3rem;
+}
+
+.fylo-footer{
+    display: flex;
+}
