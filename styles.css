@@ -1,8 +1,11 @@
 /* font-family: 'Raleway', sans-serif; */
 
-body{
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+}
+
+body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -11,13 +14,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5rem 3.5rem;
+    padding: 2% 4%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
 .fylo-navbar{
     padding: 3%;
+    
 }
 
 .fylo-logo{
@@ -44,6 +48,8 @@ body{
 
 .fylo-section-1{
     display: flex;
+    flex-wrap: wrap;
+    padding: 4%;
     
 }
 
@@ -57,15 +63,16 @@ body{
 }
 
 h1{
-    font-size: 3rem;
-    padding: 4.5rem 0 1rem 3rem;
+    font-size: 2.5rem;
+    padding: 4rem 0 1rem 3rem;
     color: hsl(243, 87%, 12%);
+    /* line-height: 3.8rem; */
 }
 
 .section1-left p{
-    font-size: 1.3rem;
+    font-size: 1.22rem;
     padding: 0 1.5rem 0 3rem;
-    font-weight: 700;
+    font-weight: bold;
     color: hsl(238, 22%, 44%);
 }
 
@@ -74,11 +81,18 @@ h1{
     padding-left: 3rem;
     gap: 1rem;
     height: 2.9rem;
+    margin-top: 2rem;
 }
 
 
 .section1-form input{
     width: 50%;
+}
+
+.section1-form ::placeholder{
+    font-size: 1rem;
+    padding-left: 8%;
+    color: hsl(0, 0%, 75%);
 }
 
 .section1-form button{
@@ -91,16 +105,26 @@ h1{
     font-size: 1rem;
 }
 
+
 .section1-right img{
     width: 100%;
 }
 
+/* background section */
+
+.fylo-back-section{
+    height: 10vh;
+    background: url("/images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+}
 
 
 /* section-2 */
 
 .fylo-section-2{
     display: flex;
+    padding: 4%;
+    background-color: hsl(240, 75%, 98%);
 }
 
 .section2-left{
@@ -113,16 +137,18 @@ h1{
 
 h2{
     font-size: 2.5rem;
-    padding: 4.5rem 0 1rem 3rem;
+    padding: 0 0 1rem 3rem;
     color: hsl(243, 87%, 12%);
 }
 
 .section2-para{
     font-size: 1.1rem;
-    padding: 0 8.8rem 0 3rem;
-    font-weight: 700;
+    padding: 0 4rem 1rem 3rem;
+    font-weight: bold;
     color: hsl(238, 22%, 44%);
 }
+
+
 
 .section2-left a{
     padding-left: 3rem;
@@ -137,16 +163,21 @@ h2{
     background-color: #fff;
     text-align: left;
     width: 50%;
-    margin-top: 3rem;
+    margin-top: 5%;
     box-shadow: 0 0 15px 2px hsl(0, 0%, 75%);
+    padding: 5%;
+    margin-left: 5%;
 }
 
 .fylo-testimonial>p{
     color: hsl(243, 87%, 12%);
-    font-size: 1rem;
-    padding: 3% 5%;
+    font-size: .9rem;
+    padding: 3% 11% 5% 0;
     font-weight: 400;
+    line-height: 1.3rem;
 }
+
+
 
 .testimonial-name{
     display: flex;
@@ -156,16 +187,20 @@ h2{
 
 .testimonial-name img{
     border-radius: 50%;
-    height: 20%;
-    width: 20%;
-    margin-left: 10%;
+    height: 15%;
+    width: 15%;
     float: left;
 }
 
 .testimonial-name>p{
-    font-size: .9em;
-    padding: 5%;
+    font-size: .7em;
+    padding: 4%;
 }
+
+.testimonial-name>p>span{
+    font-weight: bold;
+}
+
 
 
 .section2-right img{
@@ -181,38 +216,48 @@ h2{
     align-items: center;
     background-color: hsl(238, 22%, 44%);
     color: #fff;
+    padding: 6%;
 }
 
 .section3-left{
-    padding: 3rem;
     width: 50%;
+    padding-right: 3rem;
 }
 
 h3{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
 }
 
 .section3-left>p{
-    font-size: .9em;
-    padding-right: 10rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .section3-right{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 0 9rem;
     width: 50%;
 }
 
 .section3-right>input{
-    width: 80%;
-    height: 40px;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+
+.section3-right>::placeholder{
+    font-size: 1rem;
+    padding-left: 5%;
+    color: hsl(0, 0%, 75%);
 }
 
 .section3-right>button{
-    width: 35%;
-    height: 40px;
+    width: 45%;
+    height: 50px;
     border: none;
     background-color: hsl(224, 93%, 58%);
     color: #fff;
@@ -225,9 +270,251 @@ h3{
 /* footer */
 
 footer{
-    padding: 5rem 3rem;
+    padding: 5%;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
 }
+
+.footer-icon{
+    filter: brightness(0) invert(100%);
+    padding-bottom: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer li{
+    list-style-type: none;
+}
+
 
 .fylo-footer{
     display: flex;
+    gap: 15%;
+    /* padding-top: 10px; */
 }
+
+address{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.fylo-footer-1 ul{
+    display: grid;
+    gap: 18px;
+}
+
+.fylo-footer-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10%;
+}
+
+.fylo-footer-2>a{
+    filter: brightness(0) invert(100%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .fylo-header {
+      padding: 2% 0;
+      gap: 3rem;
+    }
+  
+    .fylo-navbar {
+      padding: 0;
+      text-align: center;
+      
+    }
+  
+    .fylo-logo {
+        width: 30%;
+    }
+  
+    .fylo-navbar ul {
+        gap: 2.1em;
+      
+    }
+  
+    .fylo-section-1 {
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .section1-left,
+    .section1-right {
+        width: 100%;
+    }
+
+    .section1-left{
+        text-align: center;
+    }
+  
+    h1 {
+        font-size: 1.8rem;
+        padding: 2rem 0;
+      
+    }
+  
+    .section1-left p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+  
+    .section1-form {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+      
+    }
+  
+    .section1-form input {
+        width: 100%;
+        height: 2.4rem;
+    }
+  
+    .section1-form button {
+        width: 100%;
+        font-size: 0.9rem;
+        height: 2.4rem;
+    }
+
+    .section1-right{
+        order: -1;
+    }
+    .section1-right img {
+        width: 100%;
+    }
+  
+    .fylo-back-section {
+        background: url("/images/bg-curve-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 6vh;
+        margin-top: 50px;
+    }
+  
+    .fylo-section-2 {
+        flex-direction: column;
+    }
+  
+    .section2-left,
+    .section2-right {
+        width: 100%;
+        text-align: center;
+    }
+  
+    h2 {
+        font-size: 1rem;
+        padding: 3rem 0;
+    }
+  
+    .section2-para {
+        text-align: left;
+        font-size: 1rem;
+        padding: 0 0 1rem 0;
+        font-weight: lighter;
+    }
+  
+    .section2-left>a {
+        font-size: 1rem;
+    }
+
+    .section2-left>a>img{
+        vertical-align: middle;
+    }
+
+    .section2-right{
+        order: -1;
+    }
+  
+    .fylo-testimonial {
+        width: 90%;
+        margin-left: 0;
+        margin: 3rem 4rem 5rem 0;
+    }
+
+    .fylo-testimonial>p{
+        font-size: .8rem;
+        padding: 0;
+    }
+  
+    .testimonial-name img {
+        height: 12%;
+        width: 12%;
+    }
+  
+    .fylo-section-3 {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+  
+    .section3-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+  
+    h3 {
+        font-size: 1.4rem;
+    }
+  
+    .section3-left>p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+  
+    .section3-right {
+        width: 100%;
+    }
+
+    .section3-right>input{
+        height: 40px;
+    }
+  
+    .section3-right>button {
+        width: 100%;
+        font-size: 0.9rem;
+        height: 40px;
+    }
+
+    footer{
+        padding: 4rem 0 2rem 3rem;
+        text-align: left;
+    }
+  
+    .fylo-footer {
+        flex-direction: column;
+        gap: 5%;
+    }
+  
+    .fylo-footer-1 ul {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+    }
+  
+    .fylo-footer-2 {
+        margin-top: 3rem;
+        grid-template-rows: repeat(1,1fr);
+        column-gap: .2rem;
+        
+    }
+
+    
+
+}
+  
