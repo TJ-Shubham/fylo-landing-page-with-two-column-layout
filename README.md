@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link] (https://github.com/TJ-Shubham/fylo-landing-page-with-two-column-layout/)
-- Live Site URL: [Link] (https://tj-shubham.github.io/fylo-landing-page-with-two-column-layout/)
+- Solution URL: [Link](https://github.com/TJ-Shubham/fylo-landing-page-with-two-column-layout/)
+- Live Site URL: [Link](https://tj-shubham.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
