@@ -41,6 +41,7 @@ Users should be able to:
 - Flexbox
 - Grid
 - Used media query
+- tailwaind css
 
 
 ### What I learned
